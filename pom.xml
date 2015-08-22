@@ -15,6 +15,7 @@
 			<groupId>com.zgardner.msa.app.logging</groupId>
 			<artifactId>api</artifactId>
 			<version>${app.logging.api.version}</version>
+			<type>war</type>
 		</dependency>
 	</dependencies>
 </project>
