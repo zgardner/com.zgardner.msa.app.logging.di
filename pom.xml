@@ -1,0 +1,20 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.zgardner.msa.app.logging</groupId>
+	<artifactId>di</artifactId>
+	<packaging>war</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>api Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+	<properties>
+		<app.logging.api.version>0.0.1-SNAPSHOT</app.logging.api.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>com.zgardner.msa.app.logging</groupId>
+			<artifactId>api</artifactId>
+			<version>${app.logging.api.version}</version>
+		</dependency>
+	</dependencies>
+</project>
