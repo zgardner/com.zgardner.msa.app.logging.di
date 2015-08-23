@@ -1,12 +1,13 @@
 container_name="com.zgardner.msa.app.logging.di"
-tag_name="$container_name:latest"
+docker_registry_path="registry.docker.msa.zgardner.com:5000"
+tag_name="$docker_registry_path/$container_name:latest"
 host_api_port="8090"
 container_api_port="8080"
-db_container_hostname="com.zgardner.msa.db"
+db_container_hostname="db.msa.zgardner.com"
 db_container_ip="192.168.1.68"
 
-echo "Building image $tag_name..."
-docker build -t $tag_name .
+echo "Pulling latest tag $tag_name..."
+docker pull $tag_name
 
 echo "Killing container $container_name..."
 docker kill $container_name
